@@ -3,9 +3,9 @@ General Information:
 
 APIs available to expose:
 -------------------------
-
 Google APIs      : https://developers.google.com/apis-explorer/#p/
 Giant db of APIs : https://www.programmableweb.com/apis/directory
+
 
 StreetView Sample:
 ------------------
@@ -13,12 +13,28 @@ StreetView Sample:
 1600 pennsylvania ave | washington dc
 30 rockefeller center | new york city, ny
 
+
 Mine NYTimes API Key:
 ---------------------
 0d29525d75fc4359948a5734821da08c
 
-NYT Implementation:
--------------------
+
+NYT Api Main Web Page:
+----------------------
+http://developer.nytimes.com/
+
+
+NYT Implementation URL Test:
+---------------------------
 Test url : http://api.nytimes.com/svc/search/v2/articlesearch.json?q=washington dc&sort=newest&api-key=0d29525d75fc4359948a5734821da08c
 
 
+WikiPedia Main Web Page:
+------------------------
+https://www.mediawiki.org/wiki/API:Main_page
+
+
+Wiki Implementation URL Test:
+-----------------------------
+Test url : http://en.wikipedia.org/w/api.php?action=opensearch&search=washington dc&format=json&callback=wikiCallback
+		   https://en.wikipedia.org/w/api.php?action=opensearch&search=mumbai&format=json&callback=wikiCallback
