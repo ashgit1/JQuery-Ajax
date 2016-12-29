@@ -11,6 +11,7 @@ StreetView Sample:
 ------------------
 24 wille mays plaza | san francisco, ca
 1600 pennsylvania ave | washington dc
+30 rockefeller center | new york city, ny
 
 Mine NYTimes API Key:
 ---------------------
