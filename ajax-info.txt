@@ -1,0 +1,13 @@
+General Information:
+====================
+
+APIs available to expose:
+-------------------------
+
+Google APIs      : https://developers.google.com/apis-explorer/#p/
+Giant db of APIs : https://www.programmableweb.com/apis/directory
+
+StreetView Sample:
+------------------
+24 wille mays plaza | san francisco, ca
+1600 pennsylvania ave | washington dc
