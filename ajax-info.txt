@@ -11,3 +11,13 @@ StreetView Sample:
 ------------------
 24 wille mays plaza | san francisco, ca
 1600 pennsylvania ave | washington dc
+
+Mine NYTimes API Key:
+---------------------
+0d29525d75fc4359948a5734821da08c
+
+NYT Implementation:
+-------------------
+Test url : http://api.nytimes.com/svc/search/v2/articlesearch.json?q=washington dc&sort=newest&api-key=0d29525d75fc4359948a5734821da08c
+
+

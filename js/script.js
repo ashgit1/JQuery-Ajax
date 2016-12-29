@@ -22,7 +22,23 @@ function loadData() {
 
     $body.append('<img class="bgimg" src="' + streetviewUrl + '">');
 
-    // YOUR CODE GOES HERE!
+    // YOUR NY Times Ajax request goes here
+    var nytimesUrl = 'http://api.nytimes.com/svc/search/v2/articlesearch.json?q=' + cityStr + 
+                     '&sort=newest&api-key=0d29525d75fc4359948a5734821da08c'; 
+    $.getJSON(nytimesUrl, function(data){
+
+        $nytHeaderElem.text('New Yor Times Article About' + cityStr );
+        articles = data.response.docs;
+        for(var i = 0; i < articles.length; i++ ){
+            var article = articles[i];
+            $nytElem.append('<li class="article">' + 
+                            '<a href="' + article.web_url + '">' + article.headline.main + '</a>' + 
+                            '<p>' + article.snippet + '</p>' + 
+                            '</li>' 
+                        );
+        }
+
+    });
 
     return false;
 };
