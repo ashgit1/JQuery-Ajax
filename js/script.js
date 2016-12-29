@@ -38,6 +38,11 @@ function loadData() {
         $nytHeaderElem.text('New York Times Articles could not be loaded');
     });
 
+    // Set a timer for wikipedia. Since jsonp doesn't support error()
+    var wikiRequestTimer = setTimeout(function(){
+        $wikiElem.text('failed to get Wikipedia resources');
+    }, 8000);
+
     //Wikipedia Ajax request goes here
     var wikiURL = 'http://en.wikipedia.org/w/api.php?action=opensearch&search='+ cityStr + 
                   '&format=json&callback=wikiCallback';
@@ -53,6 +58,8 @@ function loadData() {
                 $wikiElem.append('<li> <a href="' + url + '">' + 
                                     articleStr + '</a></li>');
             };
+            // first comment the below line. After 8 secs the wikipedia error message will appear
+            clearTimeout(wikiRequestTimer);
         }
     });
 
